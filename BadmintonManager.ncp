@@ -1,0 +1,43 @@
+<Project>
+  <Name>BadmintonManager</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Main</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Player</Name>
+        <Access>Public</Access>
+        <Location left="26" top="314" />
+        <Size width="219" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public Guid Id { get; private set; }</Member>
+        <Member type="Property">public int Rating { get; set; }</Member>
+        <Member type="Property">public string Name { get; private set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>playerPool =&gt; Collection&lt;Player&gt;  // generel verfügbare Spieler
+currentPool =&gt; Collection&lt;Player&gt; // aktuell anwesende Spieler</Text>
+        <Location left="26" top="230" />
+        <Size width="364" height="75" />
+      </Entity>
+      <Entity type="Class">
+        <Name>MatchSuggestor</Name>
+        <Access>Public</Access>
+        <Location left="407" top="54" />
+        <Size width="229" height="353" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Collection&lt;Match&gt; History</Member>
+        <Member type="Field">Collection&lt;Player&gt; CurrentPool</Member>
+        <Member type="Field">Collection&lt;Pair&gt; CancelledPairs</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>History nur für den aktuellen Abend!</Text>
+        <Location left="243" top="10" />
+        <Size width="160" height="75" />
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
